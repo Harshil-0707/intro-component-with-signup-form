@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Intro component with sign up form</title>
+</head>
+<body>
+  <div id="container">
+    <div id="left">
+      <h1>Learn to code by watching others</h1>
+      <div id="para">
+        <p>
+        See how experienced developers solve problems in real-time.Watching scripted tutorials is great, but understanding how developers think is invaluable.
+        </p>
+      </div>
+    </div>
+    <div id="right">
+      <div id="offer">
+        Try is free 7 days &nbsp;
+        <span>then $20/mo. thereafter</span>
+      </div>
+      <div id="form">
+          <div class="input">
+            <!-- <img class="svg" src="/images/icon-error.svg"> -->
+            <input 
+              type="text" 
+              name="first" 
+              class="firstName inp"
+              id="firstName" 
+              placeholder="First Name">
+            <span class="errorMsg">First Name cannot be empty</span>
+          </div>
+          <div class="input">
+            <!-- <img class="svg" src="/images/icon-error.svg"> -->
+            <input
+              type="text" 
+              name="last" 
+              class="lastName inp"
+              id="lastName"
+              placeholder="Last Name">
+            <span class="errorMsg">Last Name cannot be empty</span>
+          </div>
+          <div class="input">
+            <!-- <img class="svg" src="/images/icon-error.svg"> -->
+            <input 
+              type="text" 
+              name="email" 
+              class="Email inp"
+              id="Email"
+              placeholder="Email Address">
+            <span class="errorMsg">Looks like this is not an email</span>
+          </div>
+          <div class="input">
+            <!-- <img class="svg" src="/images/icon-error.svg"> -->
+            <input 
+              type="password"
+              name="password"
+              class="Password inp"
+              id="Password"
+              placeholder="Password">
+            <span class="errorMsg">Password cannot be empty</span>
+          </div>
+          <button class="btn" id="btn">CLAIM YOUR FREE TRIAL</button>
+          <div id="footer">By clicking the button, you are agreeing to our 
+            <span>Terms and Services</span></div>
+      </div>
+    </div>
+  </div>
+</body>
+<script src="index.js"></script>
+</html>

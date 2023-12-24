@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; 
+    justify-content: center;
+    background-image: url('/images/bg-intro-desktop.png');
+    background-color: hsl(0, 100%, 74%);
+}
+
+#container{
+    width: 80%;
+    height: 85%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#left{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 45%;
+    font-family: Poppins;
+}
+
+#left h1{
+    width: 80%;
+    color: #fff;
+    font-size: 38px;
+    line-height: 45px;
+}
+
+#left #para{
+    margin-top: 30px;
+    width: 72%;
+}
+
+#left p{
+    font-size: 14px;
+    color: #e5e5e5;
+}
+
+#right{
+    width: 48%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#offer{
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    color: #fff;
+    padding: 20px;
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 14px;
+    border-radius: 10px;
+    background-color: hsl(248, 32%, 49%);
+}
+
+#offer span{
+    font-weight: 400;
+    color: #d5d5d5;
+}
+
+#form{
+    width: 90%;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 24px 25px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+#form .input{
+    margin-bottom: 16px;
+    width: 100%;
+}
+
+#form input{
+    width: 100%;
+    padding: 15px 20px;
+    border-radius: 5px;
+    font-weight: 500;
+    font-family: poppins;
+    border: 1px solid hsl(246, 25%, 77%);
+}
+
+#form input:hover,
+#form input:focus{
+    outline: none;
+    border: 1px solid hsl(248, 32%, 49%);
+}
+
+#form .input span{
+    font-size: 10px;
+    font-family: poppins;
+}
+
+.errorMsg{
+    font-style: italic;
+    float: right;
+    color: #fff;
+}
+
+.btn{
+    font-size: 12px;
+    width: 100%;
+    padding: 10px;
+    border: none;
+    color: #fff;
+    font-weight: 500;
+    font-family: poppins;
+    border-radius: 5px;
+    background-color: hsl(154, 59%, 51%);
+}
+
+.btn:hover{
+    cursor: pointer;
+    background-color: hsl(154, 49%, 62%);
+}
+
+#footer{
+    margin-top: 10px;
+    font-size: 10px;
+    font-weight: 500;
+    font-family: poppins;
+    color: #d5d5d5;
+}
+
+#footer span{
+    color: hsl(0, 100%, 74%);
+}
+
+@media (max-width:375px){
+    body{
+        height: 180vh;
+        background-color: hsl(0, 100%, 74%);
+        background-image: url('/images/bg-intro-mobile.png');
+    }
+    #container{
+        width: 100%;
+        height: 90%;
+        flex-direction: column;
+    }
+    #left,
+    #right{
+        align-items: center;
+        width: 100%;
+        height: 50%;
+    }
+    #right{
+        height: 100%;
+    }
+
+    #form{
+        padding: 0px;
+    }
+
+    #left h1{
+        text-align: center;
+        font-size: 30px;
+    }
+
+    #left #para{
+        text-align: center;
+        width: 75%;
+    }
+    #footer{
+        text-align: center;
+        width: 80%;
+    }
+    #offer{
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+    }
+}
