@@ -23,49 +23,47 @@
         <span>then $20/mo. thereafter</span>
       </div>
       <div id="form">
+        <form action="#">
           <div class="input">
-            <!-- <img class="svg" src="/images/icon-error.svg"> -->
             <input 
               type="text" 
               name="first" 
               class="firstName inp"
               id="firstName" 
-              placeholder="First Name">
-            <span class="errorMsg">First Name cannot be empty</span>
+              placeholder="First Name" required>
+            <span class="errorMsg" id="errorMsg">First Name cannot be empty</span>
           </div>
           <div class="input">
-            <!-- <img class="svg" src="/images/icon-error.svg"> -->
             <input
               type="text" 
               name="last" 
               class="lastName inp"
               id="lastName"
-              placeholder="Last Name">
-            <span class="errorMsg">Last Name cannot be empty</span>
+              placeholder="Last Name" required>
+            <span class="errorMsg" id="errorMsg">Last Name cannot be empty</span>
           </div>
           <div class="input">
-            <!-- <img class="svg" src="/images/icon-error.svg"> -->
             <input 
-              type="text" 
+              type="email" 
               name="email" 
               class="Email inp"
               id="Email"
-              placeholder="Email Address">
-            <span class="errorMsg">Looks like this is not an email</span>
+              placeholder="Email Address" required>
+            <span class="errorMsg" id="errorMsg">Looks like this is not an email</span>
           </div>
           <div class="input">
-            <!-- <img class="svg" src="/images/icon-error.svg"> -->
             <input 
               type="password"
               name="password"
               class="Password inp"
               id="Password"
-              placeholder="Password">
-            <span class="errorMsg">Password cannot be empty</span>
+              placeholder="Password" required>
+            <span class="errorMsg" id="errorMsg">Password cannot be empty</span>
           </div>
-          <button class="btn" id="btn">CLAIM YOUR FREE TRIAL</button>
+          <button class="btn" id="btn" type="submit">CLAIM YOUR FREE TRIAL</button>
           <div id="footer">By clicking the button, you are agreeing to our 
             <span>Terms and Services</span></div>
+            </form>
       </div>
     </div>
   </div>

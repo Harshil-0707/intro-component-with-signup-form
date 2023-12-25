@@ -71,6 +71,7 @@ body{
     font-size: 14px;
     border-radius: 10px;
     background-color: hsl(248, 32%, 49%);
+    box-shadow: 0px 8px 3px #00000030;
 }
 
 #offer span{
@@ -80,26 +81,39 @@ body{
 
 #form{
     width: 90%;
-    background-color: #fff;
-    border-radius: 8px;
     padding: 24px 25px;
+
+    border-radius: 8px;
+    background-color: #fff;
+    box-shadow: 0px 8px 3px #00000030;
+}
+
+#form form{
     display: flex;
     align-items: center;
     flex-direction: column;
 }
 
 #form .input{
-    margin-bottom: 16px;
+    margin-bottom: 20px;
     width: 100%;
+    position: relative;
 }
 
 #form input{
     width: 100%;
     padding: 15px 20px;
     border-radius: 5px;
-    font-weight: 500;
+    letter-spacing: 1px;
     font-family: poppins;
     border: 1px solid hsl(246, 25%, 77%);
+}
+
+.error {
+    border: 2px solid hsl(0, 100%, 74%);
+    background-image: url('/images/icon-error.svg');
+    background-repeat: no-repeat;
+    background-position: right 5% bottom 50%;
 }
 
 #form input:hover,
@@ -114,9 +128,10 @@ body{
 }
 
 .errorMsg{
+    display: none;
     font-style: italic;
     float: right;
-    color: #fff;
+    color: hsl(0, 100%, 74%);
 }
 
 .btn{
@@ -129,6 +144,7 @@ body{
     font-family: poppins;
     border-radius: 5px;
     background-color: hsl(154, 59%, 51%);
+    box-shadow: 0px 4px 3px #00000030;
 }
 
 .btn:hover{
@@ -170,8 +186,12 @@ body{
     }
 
     #form{
-        padding: 0px;
+        padding: 20px 0;
     }
+
+    #form .input{
+        width: 85%;
+    } 
 
     #left h1{
         text-align: center;
@@ -182,9 +202,14 @@ body{
         text-align: center;
         width: 75%;
     }
+
+    .btn{
+        width: 85%;
+    }
+
     #footer{
         text-align: center;
-        width: 80%;
+        width: 70%;
     }
     #offer{
         display: flex;
